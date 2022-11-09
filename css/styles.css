@@ -8,6 +8,7 @@
   --white-color-transparent: rgba(255, 255, 255, 0.6);
   --logo-color: #000000;
   --button-active-color: #188ce8;
+  --border-color: #eeeeee;
 }
 
 body {
@@ -227,16 +228,22 @@ p {
 
 .card {
   background-color: var(--white-color);
+  display: inline-block;
+  text-align: center;
 }
 
 .card-title {
+  margin-top: 30px;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+  color: var(--secondary-color);
 }
 
 .card-desc {
+  padding-bottom: 30px;
   font-size: 16px;
   line-height: 1.17;
   letter-spacing: 0.03em;
@@ -267,7 +274,23 @@ p {
   color: var(--white-color-transparent);
 }
 
-.filter-button {
+/*-----PORTFOLIO-----*/
+
+.portfolio {
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+
+.filter-list {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.filter-btn {
+  padding: 6px 22px;
+  border-radius: 4px;
   background-color: var(--bg-secondary-color);
   color: var(--secondary-color);
   font-family: 'Roboto', sans-serif;
@@ -276,17 +299,37 @@ p {
   line-height: 1.6;
   letter-spacing: 0.03em;
 }
-.filter-button:hover,
-.filter-button:focus {
+.filter-btn:hover,
+.filter-btn:focus {
   background-color: var(--accent-color);
   color: var(--white-color);
   cursor: pointer;
 }
 
+/*-----PROJECT-----*/
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.project-item {
+  width: calc((100% - 30px * 2) / 3);
+  height: 404px;
+  border: 1px solid var(--border-color);
+}
+
+.project-text {
+  padding: 20px 24px;
+  min-width: 322px;
+}
+
 .project-title {
+  margin-bottom: 4px;
   color: var(--secondary-color);
   font-size: 18px;
-  line-height: 1.88;
+  line-height: 2;
   letter-spacing: 0.06em;
 }
 
