@@ -322,7 +322,6 @@ p {
 
 .project-item {
   width: calc((100% - 30px * 2) / 3);
-  height: 404px;
 }
 
 .project-text {
