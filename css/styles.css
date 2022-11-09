@@ -9,6 +9,7 @@
   --logo-color: #000000;
   --button-active-color: #188ce8;
   --border-color: #eeeeee;
+  --border-header-color: #ececec;
 }
 
 body {
@@ -40,10 +41,12 @@ p {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 2px solid red;
 }
 
 /*-----HEADER-----*/
+.site-header {
+  border-bottom: 1px solid var(--border-header-color);
+}
 
 .container-header {
   display: flex;
@@ -124,7 +127,6 @@ p {
   color: var(--white-color);
   padding-top: 200px;
   padding-bottom: 200px;
-  margin-bottom: 94px;
 }
 
 .hero-title {
@@ -157,9 +159,9 @@ p {
 
 /*-----FEATURES-----*/
 
-.features,
-.activities {
-  margin-bottom: 94px;
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .visually-hidden {
@@ -222,8 +224,6 @@ p {
 
 .team {
   background-color: var(--bg-secondary-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .card {
@@ -255,6 +255,8 @@ p {
 }
 
 .site-footer .logo {
+  display: inline-block;
+  margin-bottom: 20px;
   color: var(--white-color);
 }
 
@@ -265,7 +267,12 @@ p {
   letter-spacing: 0.03em;
 }
 
+.address-list {
+  display: inline-block;
+}
+
 .site-footer .map {
+  margin-bottom: 9px;
   color: var(--white-color);
 }
 
@@ -274,12 +281,11 @@ p {
   color: var(--white-color-transparent);
 }
 
-/*-----PORTFOLIO-----*/
-
-.portfolio {
-  margin-top: 94px;
-  margin-bottom: 94px;
+.site-footer .mail {
+  margin-bottom: 9px;
 }
+
+/*-----PORTFOLIO-----*/
 
 .filter-list {
   display: flex;
@@ -317,12 +323,13 @@ p {
 .project-item {
   width: calc((100% - 30px * 2) / 3);
   height: 404px;
-  border: 1px solid var(--border-color);
 }
 
 .project-text {
   padding: 20px 24px;
   min-width: 322px;
+  border: 1px solid var(--border-color);
+  border-top: none;
 }
 
 .project-title {
